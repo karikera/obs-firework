@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{c06046c2-2e04-4d74-b04e-a324fb4a466f}</ProjectGuid>
+    <RootNamespace>firework</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\KEN\KR.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\Projects\git\third\obs-studio\libobs;D:\Projects\git\third\obs-studio\libobs-d3d11;$(SolutionDir)libfacedetection\include;$(SolutionDir)opencv\build\include;$(SolutionDir)Cubism3SDKforNative-beta3\Core\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs\$(Configuration);D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs-d3d11\$(Configuration);$(SolutionDir)libfacedetection\lib;$(SolutionDir)opencv\build\x64\vc15\lib;$(SolutionDir)Cubism3SDKforNative-beta3\Core\lib\windows\$(PlatformShortName2)\140;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\Projects\git\third\obs-studio\libobs;D:\Projects\git\third\obs-studio\libobs-d3d11;$(SolutionDir)libfacedetection\include;$(SolutionDir)opencv\build\include;$(SolutionDir)Cubism3SDKforNative-beta3\Core\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs\$(Configuration);D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs-d3d11\$(Configuration);$(SolutionDir)libfacedetection\lib;$(SolutionDir)opencv\build\x64\vc15\lib;$(SolutionDir)Cubism3SDKforNative-beta3\Core\lib\windows\$(PlatformShortName2)\140;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Projects\git\third\obs-studio\libobs;D:\Projects\git\third\obs-studio\libobs-d3d11;$(SolutionDir)libfacedetection\include;$(SolutionDir)opencv\build\include;$(SolutionDir)Cubism3SDKforNative-beta3\Core\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs\$(Configuration);D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs-d3d11\$(Configuration);$(SolutionDir)libfacedetection\lib;$(SolutionDir)opencv\build\x64\vc15\lib;$(SolutionDir)Cubism3SDKforNative-beta3\Core\lib\windows\$(PlatformShortName2)\140;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\Projects\git\third\obs-studio\libobs;D:\Projects\git\third\obs-studio\libobs-d3d11;$(SolutionDir)libfacedetection\include;$(SolutionDir)opencv\build\include;$(SolutionDir)Cubism3SDKforNative-beta3\Core\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs\$(Configuration);D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\libobs-d3d11\$(Configuration);$(SolutionDir)libfacedetection\lib;$(SolutionDir)opencv\build\x64\vc15\lib;$(SolutionDir)Cubism3SDKforNative-beta3\Core\lib\windows\$(PlatformShortName2)\140;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>set obs_path=D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\bin\$(PlatformArchitecture)bit
+kcopy "$(TargetPath)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetPath)" "D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetDir)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit" *.dll
+kcopy "$(SolutionDir)opencv\build\$(PlatformShortName)\vc15\bin\opencv_world341$(DebugPostfix).dll" "%obs_path%\opencv_world341$(DebugPostfix).dll"
+kcopy "$(SolutionDir)libfacedetection\bin\libfacedetect$(PlatformPostfix).dll" "%obs_path%\libfacedetect$(PlatformPostfix).dll"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>set obs_path=D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\bin\$(PlatformArchitecture)bit
+kcopy "$(TargetPath)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetPath)" "D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetDir)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit" *.dll
+kcopy "$(SolutionDir)opencv\build\$(PlatformShortName)\vc15\bin\opencv_world341$(DebugPostfix).dll" "%obs_path%\opencv_world341$(DebugPostfix).dll"
+kcopy "$(SolutionDir)libfacedetection\bin\libfacedetect$(PlatformPostfix).dll" "%obs_path%\libfacedetect$(PlatformPostfix).dll"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>set obs_path=D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\bin\$(PlatformArchitecture)bit
+kcopy "$(TargetPath)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetPath)" "D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetDir)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit" *.dll
+kcopy "$(SolutionDir)opencv\build\$(PlatformShortName)\vc15\bin\opencv_world341$(DebugPostfix).dll" "%obs_path%\opencv_world341$(DebugPostfix).dll"
+kcopy "$(SolutionDir)libfacedetection\bin\libfacedetect$(PlatformPostfix).dll" "%obs_path%\libfacedetect$(PlatformPostfix).dll"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>set obs_path=D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\bin\$(PlatformArchitecture)bit
+kcopy "$(TargetPath)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetPath)" "D:\Projects\git\third\obs-studio\build_$(PlatformShortName)\rundir\Debug\obs-plugins\$(PlatformArchitecture)bit\$(TargetFileName)"
+kcopy "$(TargetDir)" "D:\Program Files (x86)\obs-studio\obs-plugins\$(PlatformArchitecture)bit" *.dll
+kcopy "$(SolutionDir)opencv\build\$(PlatformShortName)\vc15\bin\opencv_world341$(DebugPostfix).dll" "%obs_path%\opencv_world341$(DebugPostfix).dll"
+kcopy "$(SolutionDir)libfacedetection\bin\libfacedetect$(PlatformPostfix).dll" "%obs_path%\libfacedetect$(PlatformPostfix).dll"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="chatpusher.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="Cubism3SDKforNative-beta3\Framework\src\ICubismAllocator.hpp" />
+    <ClInclude Include="Cubism3SDKforNative-beta3\Framework\src\ICubismModelSetting.hpp" />
+    <ClInclude Include="Cubism3SDKforNative-beta3\Framework\src\Live2DCubismCore.hpp" />
+    <ClInclude Include="mfmix.h" />
+    <ClInclude Include="mplayer.h" />
+    <ClInclude Include="obs\device.h" />
+    <ClInclude Include="chat.h" />
+    <ClInclude Include="drawcontext.h" />
+    <ClInclude Include="drawobject.h" />
+    <ClInclude Include="fireluncher.h" />
+    <ClInclude Include="fireline.h" />
+    <ClInclude Include="firework.h" />
+    <ClInclude Include="gapi.h" />
+    <ClInclude Include="imagecache.h" />
+    <ClInclude Include="msgobj.h" />
+    <ClInclude Include="obs\imagesource.h" />
+    <ClInclude Include="obs\obs.h" />
+    <ClInclude Include="obs\obs_firework.h" />
+    <ClInclude Include="obs\source.h" />
+    <ClInclude Include="res.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="twitch.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="vote.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="chatpusher.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="mfmix.cpp" />
+    <ClCompile Include="mplayer.cpp" />
+    <ClCompile Include="obs\device.cpp" />
+    <ClCompile Include="chat.cpp" />
+    <ClCompile Include="drawcontext.cpp" />
+    <ClCompile Include="drawobject.cpp" />
+    <ClCompile Include="face.cpp" />
+    <ClCompile Include="fireline.cpp" />
+    <ClCompile Include="firework.cpp" />
+    <ClCompile Include="gapi.cpp" />
+    <ClCompile Include="imagecache.cpp" />
+    <ClCompile Include="live2d.cpp" />
+    <ClCompile Include="fireluncher.cpp" />
+    <ClCompile Include="msgobj.cpp" />
+    <ClCompile Include="obs\imagesource.cpp" />
+    <ClCompile Include="obs\obs.cpp" />
+    <ClCompile Include="obs\obs_firework.cpp" />
+    <ClCompile Include="obs\source.cpp" />
+    <ClCompile Include="res.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="twitch.cpp" />
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="vote.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ken\gapiformatter\gapiformatter.vcxproj">
+      <Project>{2e1ba2c7-ba19-47e5-824e-cb68e5d04b69}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KR3\KR3.vcxproj">
+      <Project>{f5212e7b-4791-4488-a23a-57af3023e7d3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRApp\KRApp.vcxproj">
+      <Project>{de83e736-47ac-475f-9db8-8ddf22b70bf5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRHttp\KRHttp.vcxproj">
+      <Project>{d7aa1504-0276-4ef1-9647-753c57ad3df3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRMySQL\KRMySQL.vcxproj">
+      <Project>{e25f0c5a-72ce-481e-8f08-c36ac5ad9666}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRNew\KRNew.vcxproj">
+      <Project>{7102424c-18ec-4918-b6e1-1d58d1185387}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRSound\KRSound.vcxproj">
+      <Project>{179c15ff-42c0-4d89-b1c9-3f47cf571d6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRUtil\KRUtil.vcxproj">
+      <Project>{b169b80d-383d-4324-abfa-b71c289bf4c1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ken\KRWin\KRWin.vcxproj">
+      <Project>{432cc3c8-34b1-405d-9675-36fdf25289c7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kr%24gapi%24youtube.ajax">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Identity).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Identity).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Identity).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Identity).h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="kr$twitch.ajax">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Identity).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Identity).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Identity).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Identity).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">gapiformatter %(Identity) %(Identity).h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">gapiformatter %(Identity) %(Identity).h</Command>
+    </CustomBuild>
+    <None Include="..\..\..\..\..\Program Files (x86)\obs-studio\bin\64bit\res\config.json" />
+    <None Include="res\config.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

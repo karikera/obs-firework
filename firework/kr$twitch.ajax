@@ -1,0 +1,94 @@
+Channel
+{
+	"mature":boolean,
+	"status":string,
+	"broadcaster_language":string,
+	"display_name":string,
+	"game":string,
+	"language":string,
+	"_id":string,
+	"name":"karikera3",
+	"created_at":string,
+	"updated_at":string,
+	"partner":boolean,
+	"logo":string,
+	"video_banner":string,
+	"profile_banner":string,
+	"profile_banner_background_color":string,
+	"url":string,
+	"views":unsigned integer,
+	"followers":unsigned integer,
+	"_links":{
+		"self":string,
+		"follows":string,
+		"commercial":string,
+		"stream_key":string,
+		"chat":string,
+		"features":string,
+		"subscriptions":string,
+		"editors":string,
+		"teams":string,
+		"videos":string
+	},
+	"delay":string,
+	"banner":string,
+	"background":string,
+    "broadcaster_type": string,
+	"stream_key":string,
+	"email":string
+}
+
+ChatRooms
+{
+    "_total": unsigned integer,
+    "rooms": [
+        {
+            "_id": string,
+            "owner_id": string,
+            "name": string,
+            "topic": string,
+            "is_previewable": boolean,
+            "minimum_allowed_role": string
+        }
+    ]
+}
+
+Stream
+{
+   "stream": {
+      "_id": unsigned integer,
+      "game": string,
+      "viewers": unsigned integer = -1,
+      "video_height": unsigned integer,
+      "average_fps": unsigned integer,
+      "delay": unsigned integer,
+      "created_at": string,
+      "is_playlist": boolean,
+      "preview": {
+         "small": string,
+         "medium": string,
+         "large": string,
+         "template": string
+      },
+      "channel": {
+         "mature": boolean,
+         "status": string,
+         "broadcaster_language": string,
+         "display_name": string,
+         "game": string,
+         "language": string,
+         "_id": unsigned integer,
+         "name": string,
+         "created_at": string,
+         "updated_at": string,
+         "partner": boolean,
+         "logo": string,
+         "video_banner": string,
+         "profile_banner": string,
+         "profile_banner_background_color": string,
+         "url": string,
+         "views": unsigned integer,
+         "followers": unsigned integer
+      }
+   }
+}

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="drawcontext.cpp" />
+    <ClCompile Include="drawobject.cpp" />
+    <ClCompile Include="res.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="gapi.cpp" />
+    <ClCompile Include="imagecache.cpp" />
+    <ClCompile Include="msgobj.cpp" />
+    <ClCompile Include="fireluncher.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="face.cpp" />
+    <ClCompile Include="live2d.cpp" />
+    <ClCompile Include="obs\imagesource.cpp" />
+    <ClCompile Include="obs\obs.cpp" />
+    <ClCompile Include="obs\source.cpp" />
+    <ClCompile Include="fireline.cpp" />
+    <ClCompile Include="firework.cpp" />
+    <ClCompile Include="twitch.cpp" />
+    <ClCompile Include="chatpusher.cpp" />
+    <ClCompile Include="obs\obs_firework.cpp" />
+    <ClCompile Include="obs\device.cpp" />
+    <ClCompile Include="mfmix.cpp" />
+    <ClCompile Include="mplayer.cpp" />
+    <ClCompile Include="vote.cpp" />
+    <ClCompile Include="chat.cpp" />
+    <ClCompile Include="user.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="drawcontext.h" />
+    <ClInclude Include="drawobject.h" />
+    <ClInclude Include="res.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="gapi.h" />
+    <ClInclude Include="imagecache.h" />
+    <ClInclude Include="msgobj.h" />
+    <ClInclude Include="fireluncher.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="Cubism3SDKforNative-beta3\Framework\src\ICubismAllocator.hpp" />
+    <ClInclude Include="Cubism3SDKforNative-beta3\Framework\src\ICubismModelSetting.hpp" />
+    <ClInclude Include="Cubism3SDKforNative-beta3\Framework\src\Live2DCubismCore.hpp" />
+    <ClInclude Include="obs\imagesource.h" />
+    <ClInclude Include="obs\obs.h" />
+    <ClInclude Include="obs\source.h" />
+    <ClInclude Include="fireline.h" />
+    <ClInclude Include="firework.h" />
+    <ClInclude Include="twitch.h" />
+    <ClInclude Include="chatpusher.h" />
+    <ClInclude Include="obs\obs_firework.h" />
+    <ClInclude Include="obs\device.h" />
+    <ClInclude Include="mfmix.h" />
+    <ClInclude Include="mplayer.h" />
+    <ClInclude Include="vote.h" />
+    <ClInclude Include="chat.h" />
+    <ClInclude Include="user.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\config.json" />
+    <None Include="..\..\..\..\..\Program Files (x86)\obs-studio\bin\64bit\res\config.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kr%24gapi%24youtube.ajax" />
+    <CustomBuild Include="kr$twitch.ajax" />
+  </ItemGroup>
+</Project>
