@@ -592,7 +592,7 @@ float SuperChat::draw(float y) noexcept
 	nextGap += height;
 	y -= nextGap;
 
-	uint tierColorIndex = tmin((uint)m_tier, (uint)countof(g_res->tiers) - 1);
+	uint tierColorIndex = mint((uint)m_tier, (uint)countof(g_res->tiers) - 1);
 	if (m_lifeTime < 1.f)
 	{
 		float v = 1.f - m_lifeTime;

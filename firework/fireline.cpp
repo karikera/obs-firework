@@ -61,7 +61,7 @@ void FireLine::draw() noexcept
 }
 
 Firework::Firework(const vec4 &from, const vec4 &to, float width, vec2 pos, vec2 speed) noexcept
-	:FireLine(g_dc->createSolidBrush(clampColor(from)), width, pos), m_speed(speed)
+	:FireLine(g_dc->createSolidBrush(clamp01v(from)), width, pos), m_speed(speed)
 	, m_from(from)
 	, m_diff(to - from)
 	, m_start(g_dc.now)
@@ -79,7 +79,7 @@ void Firework::draw() noexcept
 
 	if (m_pos[countof(m_pos) - 1].y >= g_dc.height) dead = true;
 
-	m_brush.setColor(clampColor(m_diff*lifespan + m_from));
+	m_brush.setColor(clamp01v(m_diff*lifespan + m_from));
 
 	vec2 next = m_speed * 0.95f;
 	next.y += GRAVITY;

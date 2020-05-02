@@ -162,7 +162,7 @@ void SoundSpectrumStream::_process(double time) noexcept
 	for (; data != data_end; data++)
 	{
 		float y = data->length();
-		int x = math::clamp(0, (int)(logf(i++) / maxfreq * (float)FREQ_COUNT), FREQ_COUNT - 1);
+		int x = clampt(0, (int)(logf(i++) / maxfreq * (float)FREQ_COUNT), FREQ_COUNT - 1);
 
 		if (prevX <= x)
 		{
@@ -321,7 +321,7 @@ int MFMix::_audioThread() noexcept
 				constexpr float minv = (float)minof(sample_t);
 				constexpr float maxv = (float)maxof(sample_t);
 
-				v = math::clamp(minv, atanf(v) * (SAMPLE_LIMIT / (math::pi / 2.f)), maxv);
+				v = clampt(minv, atanf(v) * (SAMPLE_LIMIT / (math::pi / 2.f)), maxv);
 			}
 
 			if (m_spectrum != nullptr)

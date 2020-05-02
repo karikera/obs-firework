@@ -20,7 +20,7 @@ Text Vote::Pie::getName() noexcept
 }
 void Vote::Pie::draw(const vec4 & colorTo, float fromAngle, float sweep, float r) noexcept
 {
-	float t = tmin((float)(g_dc.now - m_startTime) / INCREASE_DURATION, 1.f);
+	float t = mint((float)(g_dc.now - m_startTime) / INCREASE_DURATION, 1.f);
 	float sizeTo = (float)getReferenceCount() - 1.f;
 	float size = (sizeTo - m_startSize) * t + m_startSize;
 	vec4 color = (colorTo - m_startColor) * t + m_startColor;

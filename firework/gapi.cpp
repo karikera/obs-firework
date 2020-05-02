@@ -353,6 +353,7 @@ namespace
 
 				HttpReceiver recv;
 				Process process;
+				// TODO: reuqest url directly
 				process.exec(TSZ16() <<
 					u"res/nwjs-v0.35.4-win-x64/nw.exe "
 					u"res/loginpage "
